@@ -114,3 +114,4 @@ venv.bak/
 *.retry
 *.swp
 env.tfvars
+kubeconfig*
