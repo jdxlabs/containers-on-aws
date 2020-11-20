@@ -10,8 +10,3 @@ provider "kubernetes" {
   load_config_file       = false
   version                = "~> 1.9"
 }
-
-terraform {
-  backend "s3" {
-  }
-}

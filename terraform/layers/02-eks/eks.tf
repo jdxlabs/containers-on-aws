@@ -1,7 +1,7 @@
 
-module "playoff-cluster" {
+module "eks_cluster" {
   source          = "terraform-aws-modules/eks/aws"
-  cluster_name    = "playoff-cluster"
+  cluster_name    = "${var.env_conf.group}-${var.env_conf.env}-eks-cluster"
   cluster_version = "1.17"
   subnets         = data.terraform_remote_state.network.outputs.public_azs.public_subnet_ids
   vpc_id          = data.terraform_remote_state.network.outputs.vpc_id

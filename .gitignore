@@ -108,7 +108,9 @@ venv.bak/
 .vscode
 .DS_Store
 .terraform
+*.tfstate
 *.tfstate.backup
+*.tfstate.lock.info
 *.retry
 *.swp
 env.tfvars
